@@ -1,0 +1,42 @@
+
+nombres = "1,2,3,4,5"
+#nombre1 = input("Entrez liste de nombres séparés par des virgules : ")
+
+liste = nombres.split(",")
+print("Liste : ",liste)
+
+
+liste_entiers = []
+Nombres_somme = 0
+for nb in liste:
+    nombre_entier=int(nb)
+    liste_entiers.append(nombre_entier)
+print(liste_entiers)  # Affiche la liste d'entiers
+
+
+# Calculer la somme des nombres
+somme = 0
+for nombre in liste_entiers:
+    somme += nombre
+
+# Equivalent à:
+# somme = sum(liste_entiers)
+print("Total addition : ",somme)
+
+
+# Effectuer la moyenne à l'aide de la somme des nombre
+moyenne = somme // len(liste_entiers)   # 1 / renvoie 3.0     2 // renvoie 3
+print("Moyenne des nombres:", moyenne)
+
+# version 2 de la somme
+somme = sum(liste_entiers)
+moyenne = int(somme / len(liste_entiers))
+print("Moyenne des nombres:", moyenne)
+
+# Trouver combien de nombres de la liste sont supérieurs à la moyenne
+nombre_au_dessus_moyenne = 0
+for nombre in liste_entiers:
+    if nombre > moyenne:
+        nombre_au_dessus_moyenne += 1
+print("Nombre de nombres supérieurs à la moyenne:", nombre_au_dessus_moyenne)
+
