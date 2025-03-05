@@ -1,0 +1,9 @@
+fruits = {"pomme": "rouge", "banane": "jaune", "orange": "orange"}
+fruits["kiwi"] = "vert" # ajoute un nouvel élément dans mon dictionnaire
+print(fruits)
+
+couleur_banane = fruits["banane"] # Mettre valeur de babane dans une variable
+print(couleur_banane)
+
+fruits.pop('banane') # supprime banane du dictionnaire
+print(fruits)
