@@ -5,5 +5,6 @@ print(fruits)
 couleur_banane = fruits["banane"] # Mettre valeur de babane dans une variable
 print(couleur_banane)
 
-fruits.pop('banane') # supprime banane du dictionnaire
+# fruits.pop('banane') # supprime banane du dictionnaire
+del fruits["banane"] 
 print(fruits)
